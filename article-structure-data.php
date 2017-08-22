@@ -24,11 +24,11 @@
     "name": "<?php bloginfo('name') ?>",
     "logo": {
       "@type": "ImageObject",
-      "url": "http://www.theculinaryfoodgroup.com/wp-content/uploads/2016/03/logo.png",
+      "url": "<?php bloginfo('url') ?>/logo.png",
       "width": 350,
       "height": 60
     }
   },
-  "description": "<?php the_excerpt() ?>"
+  "description": "<?php echo wp_strip_all_tags(get_the_excerpt()) ?>"
 }
 </script>
